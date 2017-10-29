@@ -1,0 +1,35 @@
+// Font sizes
+
+$font-size-base: 16px;
+
+// Line Heights
+
+$line-height-p: 35px;
+
+// Breakpoints
+$tablet-landscape-point: "(max-width: 1024px)";
+$tablet-portrait-point: "(max-width: 1023px)";
+$mobile-landscape-wide-point: "(max-width: 767px)";
+$mobile-landscape-narrow-point: "(max-width: 567px)";
+$mobile-portrait-point: "(max-width: 479px)";
+
+$mobile-landscape-height: "(max-height: 450px)";
+
+// Layout
+$layout-max-width: 1152px;
+$layout-number-of-columns: 12;
+$layout-column-margin: 0.01;
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+$color-grey-light: #f4f6f8;
+$color-grey-dark: #525252;
+$color-blue-light: #7cd2f9;
+$color-blue-medium: #29B6F6;
+$color-blue-dark: #3c34a2;
+
+// Fonts
+$main-font: 'SF Display', sans-serif;
+$secondary-font: 'Quicksand', sans-serif;
+$tertiary-font: 'Montserrat', sans-serif;

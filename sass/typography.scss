@@ -1,0 +1,98 @@
+/* Fonts
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: $main-font;
+}
+.quicksand {
+	font-family: $secondary-font;
+	font-weight: 700;
+}
+.montserrat {
+	font-family: $tertiary-font;
+	font-weight: 700;
+}
+
+/* Sizes
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font-size: $font-size-base;
+}
+.headline {
+	font-size: em(60px);
+	@include rt(40, 60, 320, 1320);
+}
+.title {
+	font-size: em(50px);
+	@include rt(30, 50, 320, 1320);
+}
+.list-title {
+	font-size: em(40px);
+	@include rt(30, 40, 320, 1320);
+}
+.large-copy {
+	font-size: em(30px);
+}
+.large-copy strong {
+	font-size: rem(35px);
+}
+header nav, .medium-copy {
+	font-size: em(25px);
+}
+.bio-title {
+	font-size: em(18px);
+}
+.bio-copy, footer nav {
+	font-size: em(13px);
+	line-height: 1.75;
+}
+.list-number {
+	font-size: em(180px);
+}
+
+/* Colors
+----------------------------------------------------------------------------------------------------*/
+
+body, a {
+	color: $color-blue-medium;
+}
+a:hover {
+	opacity: .7;
+}
+.bg-blue-medium, .bg-blue-light {
+	color: $color-white;
+	a {
+		color: $color-white;
+	}
+}
+p {
+}
+.dark-grey, .bio-copy a  {
+	color: $color-grey-dark;
+}
+
+/* Styles
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+strong, .bold, .bio-copy a  {
+	font-weight: 700;
+}
+.text-upper, footer nav {
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
