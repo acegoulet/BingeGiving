@@ -80,6 +80,8 @@ $(document).ready(function(){
     scrollfade_in_up($('.fade-in-out-scroll'), 100, 300, 2.5);
     scrollfade_in_left($('.fade-in-out-scroll-left'), 100, 200, 2.5);
     scrollfade_in_right($('.fade-in-out-scroll-right'), 100, 200, 2.5);
+    scrollfade_in_left($('.fade-in-out-scroll-left-alt'), 100, 400, 2.5);
+    scrollfade_in_right($('.fade-in-out-scroll-right-alt'), 100, 400, 2.5);
     scrollfade_in($('.fade-in-out-scroll-simple'), 100, 300);
 });
 

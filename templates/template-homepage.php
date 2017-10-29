@@ -13,8 +13,8 @@
 	
 	<section id="section-2" data-section="<?php echo sluggify(get_field('section_2_menu_label')); ?>" class="bg-blue-light section-2 height-100">
 		<div class="container">
-			<div class="section-2-text grid_6 vert-center float-right vert-center height-100 title section-padding fade-in-out-scroll-right"><?php the_field('section_2_text'); ?></div>
-			<div class="section-2-image-wrapper grid_6 image-wrapper height-100 fade-in-out-scroll-left">
+			<div class="section-2-text grid_6 vert-center float-right vert-center height-100 title section-padding fade-in-out-scroll-right-alt"><?php the_field('section_2_text'); ?></div>
+			<div class="section-2-image-wrapper grid_6 image-wrapper height-100 fade-in-out-scroll-left-alt">
 				<?php if(get_field('section_2_image')){ ?>
 					<img src="<?php echo get_image_url(get_field('section_2_image'), 'full'); ?>" alt="<?php bloginfo('name'); ?>" />
 				<?php } ?>

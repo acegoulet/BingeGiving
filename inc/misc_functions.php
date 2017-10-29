@@ -28,7 +28,7 @@ Enqueue Styles
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
-	wp_enqueue_style( 'parent-style', gsdu() . '/style.css', '', '1.0.9' );
+	wp_enqueue_style( 'parent-style', gsdu() . '/style.css', '', '1.0.10' );
 
 }
 
@@ -42,10 +42,10 @@ function theme_scripts_enqueue() {
 	wp_enqueue_script('waypoints', gtdu(). '/js/vendor/jquery.waypoints.min.js', 'jquery', '4.0.1', true);
 	
 	if(get_site_env() == 'staging' || get_site_env() == 'dev'){
-		wp_enqueue_script('theme-scripts', gtdu(). '/js/site-scripts/site-scripts.js', array('jquery'), '1.0.1', true);
+		wp_enqueue_script('theme-scripts', gtdu(). '/js/site-scripts/site-scripts.js', array('jquery'), '1.0.4', true);
 	}
 	else {
-		wp_enqueue_script('theme-scripts-min', gtdu(). '/js/script-min.js', array('jquery','slick','waypoints'), '1.0.0', true);
+		wp_enqueue_script('theme-scripts-min', gtdu(). '/js/script-min.js', array('jquery','slick','waypoints'), '1.0.4', true);
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts_enqueue' );

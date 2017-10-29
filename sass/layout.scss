@@ -8,7 +8,7 @@
 	@include transition(opacity, .4s);
 }
 
-.fade-in-out-scroll, .fade-in-out-scroll-simple, .fade-in-out-scroll-left, .fade-in-out-scroll-right {
+.fade-in-out-scroll, .fade-in-out-scroll-simple, .fade-in-out-scroll-left, .fade-in-out-scroll-right, .fade-in-out-scroll-left-alt, .fade-in-out-scroll-right-alt {
     opacity: 0;
     position: relative;
     
@@ -19,7 +19,7 @@
         top: auto !important;
     }
 }
-.fade-in-out-scroll-left, .fade-in-out-scroll-right {
+.fade-in-out-scroll-left, .fade-in-out-scroll-right, .fade-in-out-scroll-left-alt, .fade-in-out-scroll-right-alt {
     @media #{$mobile-landscape-height} {
         opacity: 1 !important;
         transform: translateX(0) !important;
@@ -29,7 +29,7 @@
     opacity: 0;
     @include transition(opacity, .6s);
 }
-.fade-in-out-scroll, .fade-in-out-scroll-left, .fade-in-out-scroll-right {
+.fade-in-out-scroll, .fade-in-out-scroll-left, .fade-in-out-scroll-right, .fade-in-out-scroll-left-alt, .fade-in-out-scroll-right-alt {
     transform: translateZ(0);
 }
 
