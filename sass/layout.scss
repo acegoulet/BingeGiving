@@ -302,6 +302,7 @@ footer {
 ----------------------------------------------------------------------------------------------------*/
 
 .section-4 {
+/*
 	background: no-repeat bottom right;
 	background-size: auto 90%;
 	@media #{$tablet-portrait-point} {
@@ -309,6 +310,7 @@ footer {
 		background-size: 100% auto;
 		padding-bottom: 130%;
 	}
+*/
 	.container {
 		position: relative;
 		overflow: visible;
@@ -437,6 +439,14 @@ footer {
 		width: 100%;
 		margin: 0 0 4% 0;
 		padding-top: 55%;
+	}
+}
+.bio-wrapper {
+	width: 70%;
+	float: left;
+	@media #{$tablet-portrait-point} {
+		float: none;
+		width: 100%;
 	}
 }
 .team-member-long-bio {

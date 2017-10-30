@@ -12,6 +12,9 @@ body {
 	font-family: $tertiary-font;
 	font-weight: 700;
 }
+.tagline {
+	font-family: $tertiary-font;
+}
 
 /* Sizes
 ----------------------------------------------------------------------------------------------------*/
@@ -68,7 +71,7 @@ a:hover {
 }
 p {
 }
-.dark-grey, .bio-copy a  {
+.dark-grey, .bio-copy a, .tagline  {
 	color: $color-grey-dark;
 }
 

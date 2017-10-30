@@ -3,6 +3,23 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
+	<div class="landing-wrapper page-active page">
+	    <div class="landing-container">
+	        <div class="landing-content">
+	            <div class="logo-holder">
+	                <img class="intro-logo hidden" src="<?php echo gsdu(); ?>/img/heart-logo-white.svg" alt="BingeGiving">
+	                <img class="intro-logotype hidden" src="<?php echo gsdu(); ?>/img/bingegiving_logotype_tm.svg" alt="BingeGiving">
+	            </div>
+	            <div class="tagline">
+	                <div class="intro-tagline-wrapper">
+	                    <p class="hidden intro-tagline-1">Giving is Good.</p>
+	                    <P class="hidden intro-tagline-2">BingeGiving<sup>TM</sup> is Better.</P>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
 	<section id="section-1" data-section="home" class="bg-blue-medium section-1 vert-center hero">
 		<div class="container">
 			<div class="section-1-text grid_12 text-center fade-in-load">
@@ -34,9 +51,9 @@
 		</div>
 	</section>
 	
-	<section id="section-4" data-section="<?php echo sluggify(get_field('section_4_menu_label')); ?>" class="section-4 section-padding height-100" style="background-image: url(<?php echo get_image_url(get_field('section_4_image'), 'full'); ?>);">
+	<section id="section-4" data-section="<?php echo sluggify(get_field('section_4_menu_label')); ?>" class="section-4 section-padding height-100">
 		<div class="container height-100">
-			<div class="section-4-text-wrapper grid_6">
+			<div class="section-4-text-wrapper grid_8 push_2">
 				<h2 class="headline fade-in-out-scroll-left"><?php the_field('section_4_title'); ?></h2>
 				<div class="section-4-list">
 					<ul>
@@ -113,7 +130,7 @@
 			$team_member_bios = get_field('team_members');
 			$bio_count = 0;
 			foreach($team_member_bios as $team_member_bio){
-				echo '<div style="display: none;" class="team-member-long-bio" data-bio="'.$bio_count.'"><div class="long-bio-inner bg-white bio-copy dark-grey"><div class="team-image long-bio-image" style="background-image: url('.get_image_url($team_member_bio['image'], 'full').');"></div><strong>'.$team_member_bio['name'].'</strong>'.$team_member_bio['long_bio'].'</div></div>';
+				echo '<div style="display: none;" class="team-member-long-bio" data-bio="'.$bio_count.'"><div class="long-bio-inner bg-white bio-copy dark-grey"><div class="team-image long-bio-image" style="background-image: url('.get_image_url($team_member_bio['image'], 'full').');"></div><div class="bio-wrapper"><strong>'.$team_member_bio['name'].'</strong>'.$team_member_bio['long_bio'].'</div></div></div>';
 				$bio_count++;
 			}
 		?>

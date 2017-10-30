@@ -8,7 +8,7 @@ Version: 1.0
 */
 /* Base and Resets
 ---------------------------------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700|Quicksand:700");
 article,
 aside,
 details,
@@ -59,6 +59,11 @@ body, html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden; }
 
 /* Grid Classes
 ---------------------------------------------------------------------------------------------------- */
@@ -3075,6 +3080,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
+.tagline {
+  font-family: "Montserrat", sans-serif; }
+
 /* Sizes
 ----------------------------------------------------------------------------------------------------*/
 body {
@@ -3142,7 +3150,7 @@ a:hover {
   .bg-blue-medium a, .bg-blue-light a {
     color: #fff; }
 
-.dark-grey, .bio-copy a {
+.dark-grey, .bio-copy a, .tagline {
   color: #525252; }
 
 /* Styles
@@ -3432,13 +3440,15 @@ footer {
 /* Section 4
 ----------------------------------------------------------------------------------------------------*/
 .section-4 {
-  background: no-repeat bottom right;
-  background-size: auto 90%; }
-  @media (max-width: 1023px) {
-    .section-4 {
-      background: no-repeat bottom center;
-      background-size: 100% auto;
-      padding-bottom: 130%; } }
+  /*
+	background: no-repeat bottom right;
+	background-size: auto 90%;
+	@media (max-width: 1023px) {
+		background: no-repeat bottom center;
+		background-size: 100% auto;
+		padding-bottom: 130%;
+	}
+*/ }
   .section-4 .container {
     position: relative;
     overflow: visible; }
@@ -3558,6 +3568,14 @@ footer {
       margin: 0 0 4% 0;
       padding-top: 55%; } }
 
+.bio-wrapper {
+  width: 70%;
+  float: left; }
+  @media (max-width: 1023px) {
+    .bio-wrapper {
+      float: none;
+      width: 100%; } }
+
 .team-member-long-bio {
   position: fixed;
   height: 100vh;
@@ -3627,6 +3645,97 @@ footer {
   background: url("img/logo-heart-blue.svg") no-repeat center;
   background-size: 100%;
   margin: 0 auto 60px; }
+
+.landing-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  z-index: 99;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.7s cubic-bezier(0.61, 0, 0, 1.005);
+  -moz-transition: all 0.7s cubic-bezier(0.61, 0, 0, 1.005);
+  -o-transition: all 0.7s cubic-bezier(0.61, 0, 0, 1.005);
+  transition: all 0.7s cubic-bezier(0.61, 0, 0, 1.005); }
+
+.landing-wrapper.deactive {
+  opacity: 0;
+  pointer-events: none;
+  background-color: transparent !important;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0); }
+
+.landing-wrapper .landing-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center; }
+
+.landing-wrapper .landing-container .landing-content {
+  align-self: center;
+  -webkit-align-self: center;
+  text-align: center; }
+
+.landing-wrapper .landing-container .landing-content .logo-holder {
+  margin-bottom: 2rem; }
+
+.landing-wrapper .landing-container .landing-content .logo-holder .intro-logo {
+  height: 180px;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem; }
+
+.landing-wrapper .landing-container .landing-content .logo-holder .intro-logotype {
+  width: 250px;
+  display: block;
+  margin: auto; }
+
+.landing-wrapper .landing-container .landing-content .tagline p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0; }
+  .landing-wrapper .landing-container .landing-content .tagline p sup {
+    font-size: .5em; }
+
+.page {
+  background-color: white;
+  -webkit-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.page-active {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  -o-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
 
 /* Wordpress Content Styles
 ---------------------------------------------------------------------------------------------------- */

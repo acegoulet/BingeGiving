@@ -18,10 +18,20 @@ var js_files = [
 var js_files = [
     './js/site-scripts/site-scripts.js'
 ];
+var intro_files = [
+    './js/site-scripts/intro.js'
+];
 
 gulp.task('scriptsmin', function() {
     gulp.src(js_files)
     .pipe(concat('script-min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js'));
+});
+
+gulp.task('intromin', function() {
+    gulp.src(intro_files)
+    .pipe(concat('intro-min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./js'));
 });
@@ -33,7 +43,7 @@ gulp.task('sass', function(){
 })
 
 gulp.task('default', function() {
-    gulp.start(['scriptsmin', 'sass']);
-    gulp.watch(['./js/**/*.js'], ['scriptsmin']);
+    gulp.start(['scriptsmin', 'intromin', 'sass']);
+    gulp.watch(['./js/**/*.js'], ['scriptsmin', 'intromin']);
     gulp.watch(['./sass/**/*.scss', './sass/**/*.css'], ['sass']);
 });
