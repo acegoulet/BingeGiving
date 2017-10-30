@@ -53,7 +53,7 @@
 	
 	<section id="section-4" data-section="<?php echo sluggify(get_field('section_4_menu_label')); ?>" class="section-4 section-padding height-100">
 		<div class="container height-100">
-			<div class="section-4-text-wrapper grid_8 push_2">
+			<div class="section-4-text-wrapper grid_10 push_1">
 				<h2 class="headline fade-in-out-scroll-left"><?php the_field('section_4_title'); ?></h2>
 				<div class="section-4-list">
 					<ul>
@@ -72,7 +72,7 @@
 	
 	<section id="section-5" data-section="<?php echo sluggify(get_field('section_5_menu_label')); ?>" class="bg-blue-light section-5 section-padding height-100">
 		<div class="container">
-			<div class="grid_12"><h2 class="headline"><?php the_field('section_5_title'); ?></h2></div>
+			<div class="grid_12 fade-in-out-scroll-left"><h2 class="headline"><?php the_field('section_5_title'); ?></h2></div>
 			<div class="clear"></div>
 			<?php 
 				
