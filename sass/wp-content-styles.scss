@@ -2,6 +2,26 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .entry-content {
+	line-height: 1.75;
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin: 1em 0 .5em;
+	}
+	
+	ul, ol {
+		margin: 1em 1.5em;
+		padding: 0 0 0 1.5em;
+		li {
+			margin-bottom: 1em;
+		}
+		li:last-child {
+			margin-bottom: 0;
+		}
+	}
+	ul {
+		list-style: circle;
+		
+	}
 
     .alignleft {
     	float: left;
@@ -21,8 +41,15 @@
     }
     
     blockquote {
-    	padding: 0 1.5em;
+    	padding: 1em 2em;
     	margin: 1.5em 0;
+    	background: $color-grey-light;
+    	> *:first-child {
+		    margin-top: 0;
+	    }
+	    > *:last-child {
+		    margin-bottom: 0;
+	    }
     }
     
     blockquote p {
@@ -32,5 +59,12 @@
     code {
     	font-family: consolas, 'andale mono', 'courier new', monospace;
     	font-size: 1em;
+    }
+    
+    > *:first-child {
+	    margin-top: 0;
+    }
+    > *:last-child {
+	    margin-bottom: 0;
     }
 }

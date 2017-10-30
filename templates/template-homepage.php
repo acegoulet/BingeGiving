@@ -72,6 +72,8 @@
 	
 	<section id="section-5" data-section="<?php echo sluggify(get_field('section_5_menu_label')); ?>" class="bg-blue-light section-5 section-padding height-100">
 		<div class="container">
+			<div class="grid_12"><h2 class="headline"><?php the_field('section_5_title'); ?></h2></div>
+			<div class="clear"></div>
 			<?php 
 				
 				$pattern = array(3, 3, 3, 3, 5, 3, 4, 3, 3, 3, 3, 5, 4, 3);
@@ -139,8 +141,8 @@
 	<section id="section-contact" data-section="<?php echo sluggify(get_field('contact_section_menu_label')); ?>" class="bg-grey-light section-contact text-center section-padding height-100">
 		<div class="container">
 			<div class="grid_12">
-				<h2 class="contact-title quicksand headline fade-in-out-scroll"><?php the_field('contact_section_title'); ?></h2>
-				<div class="contact-section-1 large-copy quicksand fade-in-out-scroll"><?php the_field('contact_section_content'); ?></div>
+				<h2 class="contact-title headline fade-in-out-scroll"><?php the_field('contact_section_title'); ?></h2>
+				<div class="contact-section-1 large-copy fade-in-out-scroll"><?php the_field('contact_section_content'); ?></div>
 				<div class="blue-contact-heart fade-in-out-scroll"></div>
 				<div class="contact-section-2 title fade-in-out-scroll"><?php the_field('contact_section_content_2'); ?></div>
 			</div>

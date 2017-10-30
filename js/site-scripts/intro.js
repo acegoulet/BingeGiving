@@ -128,6 +128,8 @@
 								}
 							})
 							enableScroll()
+							home_load_scroll()
+							
 						}
 					}, "continous")
 			}
@@ -139,7 +141,6 @@
 		TweenMax.to(window, 1.2, {
 			onStart: function() {
 				$('html,body').scrollTop(0);
-				console.log('start');
 			},
 			//scrollTo: {y: 0},
 			ease: Power3.easeOut,
@@ -149,6 +150,15 @@
 		});
 		
 
+	}
+	
+	function home_load_scroll(){
+		if(document.location.href.split('#')[1]){
+			setTimeout(function(){
+				var section = document.location.href.split('#')[1];
+				$('html,body').animate({scrollTop: $('section[data-section="'+section+'"]').offset().top - 120},800);
+			}, 2000);
+		}
 	}
 
 	var keys = {37: 1, 38: 1, 39: 1, 40: 1};

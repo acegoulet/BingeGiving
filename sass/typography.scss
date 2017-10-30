@@ -26,24 +26,24 @@ body {
 	font-size: em(60px);
 	@include rt(40, 60, 320, 1320);
 }
-.title {
+.title, .entry-content h1 {
 	font-size: em(50px);
 	@include rt(30, 50, 320, 1320);
 }
-.list-title {
+.list-title, .entry-content h2 {
 	font-size: em(40px);
 	@include rt(30, 40, 320, 1320);
 }
-.large-copy {
+.large-copy, .entry-content h3 {
 	font-size: em(30px);
 }
 .large-copy strong {
 	font-size: rem(35px);
 }
-header nav, .medium-copy {
+header nav, .medium-copy, .entry-content h4 {
 	font-size: em(25px);
 }
-.bio-title {
+.bio-title, .entry-content h5, .entry-content h6 {
 	font-size: em(18px);
 }
 .bio-copy, footer nav {
@@ -57,7 +57,14 @@ header nav, .medium-copy {
 /* Colors
 ----------------------------------------------------------------------------------------------------*/
 
-body, a {
+body, 
+a, 
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
 	color: $color-blue-medium;
 }
 a:hover {
@@ -71,7 +78,7 @@ a:hover {
 }
 p {
 }
-.dark-grey, .bio-copy a, .tagline  {
+.dark-grey, .bio-copy a, .tagline, .entry-content  {
 	color: $color-grey-dark;
 }
 
@@ -81,7 +88,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
-strong, .bold, .bio-copy a  {
+strong, .bold, .bio-copy a, .entry-content h5  {
 	font-weight: 700;
 }
 .text-upper, footer nav {

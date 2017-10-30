@@ -1,9 +1,17 @@
 		<footer class="bg-blue-medium text-center" style="background-image: url(<?php echo get_image_url(get_field('footer_background_image','option'), 'full'); ?>);">
 			<div class="container">
 				<div class="grid_12">
-					<a href="<?php echo get_site_url(); ?>#home" class="logo footer-logo"><?php bloginfo('name'); ?></a>
-					<?php set_query_var('menu_context', 'footer'); ?>
-					<?php get_template_part('templates/partials/menu'); ?>
+					<!--a href="<?php echo get_site_url(); ?>#home" class="logo footer-logo"><?php bloginfo('name'); ?></a-->
+					<?php 
+						wp_nav_menu( 
+							array(
+								'theme_location' => 'footer-nav',
+								'fallback_cb' => false,
+								'menu_id' => 'footer-nav',
+								'container' => 'nav'
+							)
+						);
+					?>
 					<nav class="social-nav large-copy">
 						<ul>
 							<?php if(get_field('facebook_url', 'option')){ ?>

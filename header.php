@@ -22,9 +22,18 @@
 	<div id="wrapper">
 		<header class="bg-blue-medium bold vert-center">
 			<a href="<?php echo get_site_url(); ?>#home" data-section="home" class="logo header-logo nav-link"><?php bloginfo('name'); ?></a>
-			<?php set_query_var('menu_context', 'header'); ?>
+			
 			<div class="header-nav-mobile-wrapper">
-				<?php get_template_part('templates/partials/menu'); ?>
+				<?php 
+					wp_nav_menu( 
+						array(
+							'theme_location' => 'main-nav',
+							'fallback_cb' => false,
+							'menu_id' => 'main-nav',
+							'container' => 'nav'
+						)
+					);
+				?>
 			</div>
 			<a href="javascript:void(0)" class="navicon">
 		    	<div class="top all-transition"></div>
