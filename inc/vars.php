@@ -26,6 +26,6 @@
     }
     
     //GA
-    $ga_account = '';
+    $ga_account = 'UA-109041055-1';
     
 ?>

@@ -13,7 +13,7 @@
 	            <div class="tagline">
 	                <div class="intro-tagline-wrapper">
 	                    <p class="hidden intro-tagline-1">Giving is Good.</p>
-	                    <P class="hidden intro-tagline-2">BingeGiving<sup>TM</sup> is Better.</P>
+	                    <P class="hidden intro-tagline-2"><strong>BingeGiving<sup>TM</sup> is Better.</strong></P>
 	                </div>
 	            </div>
 	        </div>

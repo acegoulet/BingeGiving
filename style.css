@@ -8,7 +8,7 @@ Version: 1.0
 */
 /* Base and Resets
 ---------------------------------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700|Quicksand:700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Quicksand:700");
 article,
 aside,
 details,
@@ -3080,9 +3080,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
-.tagline {
-  font-family: "Montserrat", sans-serif; }
-
 /* Sizes
 ----------------------------------------------------------------------------------------------------*/
 body {
@@ -3157,7 +3154,7 @@ a:hover {
   .bg-blue-medium a, .bg-blue-light a {
     color: #fff; }
 
-.dark-grey, .bio-copy a, .tagline, .entry-content {
+.dark-grey, .bio-copy a, .entry-content {
   color: #525252; }
 
 /* Styles
@@ -3532,7 +3529,7 @@ footer {
   padding-bottom: 1%; }
 
 .team-section-title-wrapper {
-  padding: 4% 4% 40%;
+  padding: 4% 4% 34%;
   float: none;
   display: block; }
   .team-section-title-wrapper h2 {

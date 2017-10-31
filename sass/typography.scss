@@ -12,9 +12,6 @@ body {
 	font-family: $tertiary-font;
 	font-weight: 700;
 }
-.tagline {
-	font-family: $tertiary-font;
-}
 
 /* Sizes
 ----------------------------------------------------------------------------------------------------*/
@@ -58,7 +55,7 @@ header nav, .medium-copy, .entry-content h4 {
 ----------------------------------------------------------------------------------------------------*/
 
 body, 
-a, 
+a,
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -78,7 +75,7 @@ a:hover {
 }
 p {
 }
-.dark-grey, .bio-copy a, .tagline, .entry-content  {
+.dark-grey, .bio-copy a, .entry-content  {
 	color: $color-grey-dark;
 }
 
