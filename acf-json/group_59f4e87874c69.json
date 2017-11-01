@@ -414,6 +414,26 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_59fa0efce615d",
+                    "label": "Box Title Line 2",
+                    "name": "box_title_line_2",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_59f4ec81fab3f",
                     "label": "Box Text",
                     "name": "box_text",
@@ -611,6 +631,26 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_59fa0d200fb16",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_59f4ecfefab47",
                     "label": "Short Bio",
                     "name": "short_bio",
@@ -763,5 +803,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509384704
+    "modified": 1509560070
 }

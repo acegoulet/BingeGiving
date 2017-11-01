@@ -58,7 +58,7 @@ $(document).ready(function(){
     });
 */
     
-    $('header nav .anchor a, footer nav .anchor a').click(function(){
+    $('header nav .anchor a, footer nav .anchor a, header .logo, footer .logo').click(function(){
 	    if($('body').hasClass('home')){
 			var section = $(this).attr('href');
 			section = section.split('#')[1];

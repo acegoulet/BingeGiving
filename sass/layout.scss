@@ -116,6 +116,18 @@ ul {
 	background: no-repeat center;
 	background-size: cover;
 }
+.mobile-show {
+	display: none;
+	@media #{$mobile-landscape-wide-point} {
+		display: block;
+	}
+}
+.mobile-hide {
+	display: block;
+	@media #{$mobile-landscape-wide-point} {
+		display: none;
+	}
+}
 /* Header
 ----------------------------------------------------------------------------------------------------*/
 
@@ -149,6 +161,9 @@ header {
 			li {
 				display: inline-block;
 				margin: 0 em(20px);
+				@media #{$tablet-landscape-point-wide} {
+					margin: 0 1em;
+				}
 				@media #{$tablet-portrait-point} {
 					display: block;
 					margin: 0 0 20px;
@@ -356,11 +371,12 @@ footer {
 }
 .list-box-cta {
 	background: rgba(255,255,255, .6);
-	height: 330px;
-	padding: 4%;
+	min-height: 330px;
+	padding: 4% 4% 2% 4%;
 	margin-bottom: 2%;
 	@media #{$tablet-portrait-point} {
 		height: auto;
+		min-height: 0;
 	}
 	h3 {
 		margin: 0;
@@ -418,6 +434,12 @@ footer {
 	cursor: pointer;
 	position: relative;
 	width: 23%;
+	h4 {
+		margin-bottom: 0
+	}
+	h5 {
+		margin-top: .25em;
+	}
 }
 .team-member:hover {
 	box-shadow: 0 22px 49px 0 rgba(0,0,0,0.20);

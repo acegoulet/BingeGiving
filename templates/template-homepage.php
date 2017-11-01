@@ -12,8 +12,8 @@
 	            </div>
 	            <div class="tagline">
 	                <div class="intro-tagline-wrapper">
-	                    <p class="hidden intro-tagline-1">Giving is Good.</p>
-	                    <P class="hidden intro-tagline-2"><strong>BingeGiving<sup>TM</sup> is Better.</strong></P>
+	                    <p class="hidden intro-tagline-1 headline">Giving is Good.</p>
+	                    <P class="hidden intro-tagline-2 headline"><strong>BingeGiving<sup>TM</sup> <span class="mobile-show"></span>is Better.</strong></P>
 	                </div>
 	            </div>
 	        </div>
@@ -99,7 +99,11 @@
 				<?php 
 					$section_6_boxes = get_field('section_6_boxes');
 					foreach($section_6_boxes as $section_6_boxes_item){
-						echo '<div class="list-box-cta grid_4 section-padding fade-in-out-scroll"><h3 class="title">'.$section_6_boxes_item['box_title'].'</h3><p class="dark-grey medium-copy">'.$section_6_boxes_item['box_text'].'</p></div>';
+						echo '<div class="list-box-cta grid_4 section-padding fade-in-out-scroll"><h3 class="title">'.$section_6_boxes_item['box_title'].' ';
+						if($section_6_boxes_item['box_title_line_2']){
+							echo '<br class="mobile-hide" />'.$section_6_boxes_item['box_title_line_2'];
+						}
+						echo '</h3><p class="dark-grey medium-copy">'.$section_6_boxes_item['box_text'].'</p></div>';
 					}
 				?>
 				<div class="clear"></div>
@@ -122,7 +126,7 @@
 					$team_members = get_field('team_members');
 					$bio_count = 0;
 					foreach($team_members as $team_member){
-						echo '<div class="team-member bg-white" data-bio="'.$bio_count.'"><div class="team-image" style="background-image: url('.get_image_url($team_member['image'], 'full').');"></div><div class="team-meta"><h4 class="team-name dark-grey bio-title">'.$team_member['name'].'</h4><p class="bio-copy dark-grey">'.$team_member['short_bio'].' <strong>read more...</strong></p></div></div>';
+						echo '<div class="team-member bg-white" data-bio="'.$bio_count.'"><div class="team-image" style="background-image: url('.get_image_url($team_member['image'], 'full').');"></div><div class="team-meta"><h4 class="team-name dark-grey bio-title">'.$team_member['name'].'</h4><h5 class="team-title dark-grey bio-copy"><strong>'.$team_member['title'].'</strong></h4><p class="bio-copy dark-grey">'.$team_member['short_bio'].' <strong>read more...</strong></p></div></div>';
 						$bio_count++;
 					}
 				?>
@@ -132,7 +136,7 @@
 			$team_member_bios = get_field('team_members');
 			$bio_count = 0;
 			foreach($team_member_bios as $team_member_bio){
-				echo '<div style="display: none;" class="team-member-long-bio" data-bio="'.$bio_count.'"><div class="long-bio-inner bg-white bio-copy dark-grey"><div class="team-image long-bio-image" style="background-image: url('.get_image_url($team_member_bio['image'], 'full').');"></div><div class="bio-wrapper"><strong>'.$team_member_bio['name'].'</strong>'.$team_member_bio['long_bio'].'</div></div></div>';
+				echo '<div style="display: none;" class="team-member-long-bio" data-bio="'.$bio_count.'"><div class="long-bio-inner bg-white bio-copy dark-grey"><div class="team-image long-bio-image" style="background-image: url('.get_image_url($team_member_bio['image'], 'full').');"></div><div class="bio-wrapper"><strong>'.$team_member_bio['name'].' - '.$team_member_bio['title'].'</strong>'.$team_member_bio['long_bio'].'</div></div></div>';
 				$bio_count++;
 			}
 		?>

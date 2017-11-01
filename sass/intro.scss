@@ -1,5 +1,5 @@
 .landing-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100vw;
 	height: 100vh;
@@ -26,6 +26,9 @@
 	-ms-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
+}
+.landing-wrapper.deactive.displaynone {
+	display: none;
 }
 .landing-wrapper .landing-container {
 	position: relative;
@@ -64,9 +67,7 @@
 	margin: auto;
 }
 .landing-wrapper .landing-container .landing-content .tagline p {
-	font-size: 1.5rem;
-	font-weight: 300;
-	line-height: 1.5; 
+	line-height: 1.25; 
 	margin: 0;
 	sup {
 		font-size: .5em;
