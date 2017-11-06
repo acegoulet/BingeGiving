@@ -18,6 +18,9 @@ $(document).ready(function(){
 	});
 	
 	//homepage team carousel
+	$('.team-members').on('init', function(slick){
+	    home_load_scroll_no_amimation();
+    });
 	$('.team-members').slick({
         infinite: false,
         slidesToShow: 3,
@@ -37,6 +40,16 @@ $(document).ready(function(){
             }
         }]
     });
+    
+    
+    function home_load_scroll_no_amimation(){
+	    if(document.location.href.split('#')[1]){
+		    setTimeout(function(){
+			var section = document.location.href.split('#')[1];
+				$('html,body').animate({scrollTop: $('section[data-section="'+section+'"]').offset().top - 120},800);
+			}, 500);
+		}
+	}
     
     $('.team-member').click(function(){
 	    var bio_count = $(this).data('bio');

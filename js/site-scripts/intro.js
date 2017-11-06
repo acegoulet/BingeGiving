@@ -1,14 +1,14 @@
 (function () {
 
 	window.onload = function () {
+		
+		landing_wrapper = document.querySelector('.landing-wrapper');
 
 		var template_function = {
 
 			init_intro_animation: function () {
 
 				var heart_anim = new TimelineLite()
-
-				var landing_wrapper = document.querySelector('.landing-wrapper')
 
 				var bingegiving_better = new TweenMax.fromTo(".intro-tagline-2", .8, {
 					autoAlpha: 0,
@@ -85,19 +85,26 @@
 			}
 		}
 		
+		if(document.location.href.split('#')[1]){
+			landing_wrapper.classList.add('deactive');
+			landing_wrapper.classList.add('displaynone');
+			//home_load_scroll_no_amimation();
+		} else {
 
-		disableScroll();
+			disableScroll();
+			
+			TweenMax.to(window, 1.2, {
+				onStart: function() {
+					$('html,body').scrollTop(0);
+				},
+				//scrollTo: {y: 0},
+				ease: Power3.easeOut,
+				onComplete: function () {
+					template_function.init_intro_animation()
+				}
+			});
 		
-		TweenMax.to(window, 1.2, {
-			onStart: function() {
-				$('html,body').scrollTop(0);
-			},
-			//scrollTo: {y: 0},
-			ease: Power3.easeOut,
-			onComplete: function () {
-				template_function.init_intro_animation()
-			}
-		});
+		}
 		
 
 	}
@@ -110,6 +117,7 @@
 			}, 2000);
 		}
 	}
+	
 
 	var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
