@@ -52,7 +52,7 @@ function theme_scripts_enqueue() {
 	}
 	else {
 		wp_enqueue_script('theme-scripts-min', gtdu(). '/js/script-min.js', array('jquery', 'slick', 'waypoints'), '1.0.13', true);
-		if(is_front_page()){
+		if(is_page_template( 'templates/template-homepage.php' )){
 			wp_enqueue_script('intro', gtdu(). '/js/intro-min.js', array('jquery', 'tweenmax', 'timelinelite'), '1.0.13', true);
 		}
 	}
