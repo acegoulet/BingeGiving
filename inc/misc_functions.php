@@ -46,7 +46,7 @@ function theme_scripts_enqueue() {
 	
 	if(get_site_env() == 'staging' || get_site_env() == 'dev'){
 		wp_enqueue_script('theme-scripts', gtdu(). '/js/site-scripts/site-scripts.js', array('jquery', 'slick', 'waypoints'), '1.0.13', true);
-		if(is_front_page()){
+		if(is_page_template( 'templates/template-homepage.php' )){
 			wp_enqueue_script('intro', gtdu(). '/js/site-scripts/intro.js', array('jquery', 'tweenmax', 'timelinelite'), '1.0.13', true);
 		}
 	}
