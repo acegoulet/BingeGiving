@@ -3682,6 +3682,19 @@ footer {
 .generic-page {
   padding: 200px 0 7%; }
 
+/* Video Page 
+----------------------------------------------------------------------------------------------------*/
+.youtube-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  margin-bottom: 50px; }
+  .youtube-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 .landing-wrapper {
   position: fixed;
   top: 0;
