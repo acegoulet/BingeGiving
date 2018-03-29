@@ -9,6 +9,10 @@
 				<h1 class="entry-title headline"><?php the_title(); ?></h1>
 			</div>
 			
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+			
 			<?php if(get_field('videos')){ ?>
 			
   			<div class="videos-wrapper">
@@ -34,9 +38,7 @@
 			
 			<?php } ?>
 			
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
+			
 		</div>
 		
 	</article>

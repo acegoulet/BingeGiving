@@ -1,6 +1,6 @@
 {
     "key": "group_5abbbc8731625",
-    "title": "Video Page",
+    "title": "Videos",
     "fields": [
         {
             "key": "field_5abbbcaa74474",
@@ -69,6 +69,13 @@
                 "operator": "==",
                 "value": "templates\/template-video-page.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-presentation-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -78,10 +85,9 @@
     "instruction_placement": "label",
     "hide_on_screen": [
         "excerpt",
-        "revisions",
-        "page_attributes"
+        "revisions"
     ],
     "active": 1,
     "description": "",
-    "modified": 1522253046
+    "modified": 1522343682
 }

@@ -97,7 +97,7 @@ ul {
 	}
 }
 .section-text-inner-padding {
-	padding: 5% 11%;
+	padding: 5% 6%;
 }
 .float-right {
 	float: right;
@@ -559,10 +559,10 @@ footer {
 	padding: 200px 0 7%
 }
 
-/* Video Page 
+/* Presentation & Video Page 
 ----------------------------------------------------------------------------------------------------*/
 
-.youtube-wrapper {
+.youtube-wrapper, .dropbox-pdf-wrapper {
   position: relative;
   padding-top: 56.25%;
   margin-bottom: 50px;
@@ -572,5 +572,92 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.black-button {
+  background: $color-black;
+  color: $color-white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.page.page-template-template-presentation-page {
+  .presentation-mobile {
+    display: none;
+    @media #{$tablet-landscape-point} {
+      display: block;
+    }
+  }
+  .dropbox-pdf-wrapper {
+    @media #{$tablet-landscape-point} {
+      display: none;
+    }
+  }
+  header, footer {
+    display: none !important;
+  }
+  .page.presentation-page {
+    padding-top: 100px;
+  }
+  .entry-title {
+    border-bottom: 0;
+    display: block;
+    text-align: center;
+  }
+  .presentation-header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: $color-black;
+    padding: 10px 4%;
+    text-align: center;
+    z-index: 999;
+  }
+  .presentation-title {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    @media #{$mobile-landscape-wide-point} {
+      display: block;
+    }
+  }
+  .presentation-logo {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: url('img/binge-giving-white-logo-h.png?v=2') no-repeat center;
+    background-size: 100%;
+    vertical-align: middle;
+    @media #{$mobile-landscape-wide-point} {
+      display: inline-block;
+      margin: 0 auto;
+      width: 130px;
+      height: 30px;
+    }
+  }
+  .presentation-powered-label {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  .presentation-header-divider {
+    width: 1px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    background: $color-white;
+    margin: 0 20px;
+    @media #{$mobile-landscape-wide-point} {
+      display: none;
+    }
+  }
+  .presentation-footer {
+    text-align: center;
+    padding: 30px;
+    background: $color-black;
   }
 }

@@ -28,7 +28,7 @@
 		</div>
 	</section>
 	
-	<section id="section-2" data-section="<?php echo sluggify(get_field('section_2_menu_label')); ?>" class="bg-blue-light section-2 height-100">
+	<!--section id="section-2" data-section="<?php echo sluggify(get_field('section_2_menu_label')); ?>" class="bg-blue-light section-2 height-100">
 		<div class="container">
 			<div class="section-2-text grid_6 vert-center float-right vert-center height-100 title section-padding fade-in-out-scroll-right-alt"><?php the_field('section_2_text'); ?></div>
 			<div class="section-2-image-wrapper grid_6 image-wrapper height-100 fade-in-out-scroll-left-alt">
@@ -140,7 +140,7 @@
 				$bio_count++;
 			}
 		?>
-	</section>
+	</section-->
 	
 	<section id="section-contact" data-section="<?php echo sluggify(get_field('contact_section_menu_label')); ?>" class="bg-grey-light section-contact text-center section-padding height-100">
 		<div class="container">
