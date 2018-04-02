@@ -3709,14 +3709,15 @@ footer {
 ----------------------------------------------------------------------------------------------------*/
 .youtube-wrapper, .dropbox-pdf-wrapper {
   position: relative;
-  padding-top: 56.25%;
-  margin-bottom: 50px; }
+  padding-top: 56.25% !important;
+  margin-bottom: 50px !important;
+  overflow: hidden !important; }
   .youtube-wrapper iframe, .dropbox-pdf-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%; }
+    width: 100% !important;
+    height: 100% !important; }
 
 .black-button {
   background: #000;
@@ -3730,8 +3731,15 @@ footer {
   @media (max-width: 1024px) {
     .page.page-template-template-presentation-page .presentation-mobile {
       display: block; } }
+  @media (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .page.page-template-template-presentation-page .presentation-mobile {
+      display: block; } }
 
 @media (max-width: 1024px) {
+  .page.page-template-template-presentation-page .dropbox-pdf-wrapper {
+    display: none; } }
+
+@media (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .page.page-template-template-presentation-page .dropbox-pdf-wrapper {
     display: none; } }
 
