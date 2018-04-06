@@ -40,7 +40,7 @@ body {
 header nav, .medium-copy, .entry-content h4 {
 	font-size: em(25px);
 }
-.bio-title, .entry-content h5, .entry-content h6 {
+.bio-title, .entry-content h5, .entry-content h6, .team-intro {
 	font-size: em(18px);
 }
 .bio-copy, footer nav, .presentation-powered-label {
@@ -54,7 +54,11 @@ header nav, .medium-copy, .entry-content h4 {
   font-size: em(30px);
 	@include rt(20, 30, 320, 1320);
 }
-
+.team-intro {
+  line-height: 1.75;
+}
+  
+  
 /* Colors
 ----------------------------------------------------------------------------------------------------*/
 

@@ -3124,7 +3124,7 @@ body {
 header nav, .medium-copy, .entry-content h4 {
   font-size: 1.5625em; }
 
-.bio-title, .entry-content h5, .entry-content h6 {
+.bio-title, .entry-content h5, .entry-content h6, .team-intro {
   font-size: 1.125em; }
 
 .bio-copy, footer nav, .presentation-powered-label {
@@ -3143,6 +3143,9 @@ header nav, .medium-copy, .entry-content h4 {
   @media screen and (min-width: 1320px) {
     .presentation-title {
       font-size: 30px; } }
+
+.team-intro {
+  line-height: 1.75; }
 
 /* Colors
 ----------------------------------------------------------------------------------------------------*/
@@ -3566,6 +3569,9 @@ footer {
 ----------------------------------------------------------------------------------------------------*/
 .section-team {
   padding-bottom: 1%; }
+
+.team-intro {
+  margin-top: 30px; }
 
 .team-section-title-wrapper {
   padding: 4% 4% 34%;

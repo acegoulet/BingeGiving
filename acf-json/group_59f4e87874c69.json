@@ -539,6 +539,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5ac7d4dcebd34",
+            "label": "Team Section Intro",
+            "name": "team_section_intro",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_59f4ece0fab44",
             "label": "Team Members",
             "name": "team_members",
@@ -773,5 +792,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1522775889
+    "modified": 1523045615
 }

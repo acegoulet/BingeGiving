@@ -91,7 +91,7 @@
 		</div>
 	</section>
 	
-	<section id="section-6" data-section="<?php echo sluggify(get_field('section_6_menu_label')); ?>" class="bg-grey-light section-6 section-padding height-100" style="background-image: url(<?php echo get_image_url(get_field('section_6_background_image'), 'full'); ?>);">
+	<!--section id="section-6" data-section="<?php echo sluggify(get_field('section_6_menu_label')); ?>" class="bg-grey-light section-6 section-padding height-100" style="background-image: url(<?php echo get_image_url(get_field('section_6_background_image'), 'full'); ?>);">
 		<div class="container">
 			<div class="section-6-title grid_12 fade-in-out-scroll-left"><h2 class="headline"><?php the_field('section_6_title'); ?></h2></div>
 			<div class="clear"></div>
@@ -109,7 +109,7 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-	</section>
+	</section-->
 	
 	<section id="section-7" data-section="" class="bg-blue-light section-7 bg-cover hero" style="background-image: url(<?php echo get_image_url(get_field('section_7_image'), 'full'); ?>);">
 		<div class="section-7-text headline fade-in-out-scroll-right"><?php the_field('section_7_text'); ?></div>
@@ -117,8 +117,9 @@
 	
 	<section id="section-team" data-section="<?php echo sluggify(get_field('team_section_menu_label')); ?>" class="section-team section-padding height-100">
 		<div class="container">
-			<div class="team-section-title-wrapper bg-blue-medium grid_7 fade-in-out-scroll">
+			<div class="team-section-title-wrapper bg-blue-medium grid_12 fade-in-out-scroll">
 				<h2 class="headline"><?php the_field('team_section_title'); ?></h2>
+				<div class="team-intro"><?php the_field('team_section_intro'); ?></div>
 			</div>
 			<div class="clear"></div>
 			<div class="team-members fade-in-out-scroll">
