@@ -434,6 +434,25 @@
             ]
         },
         {
+            "key": "field_5acbdd6b553d2",
+            "label": "Section 6 End Text",
+            "name": "section_6_end_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59f4ec8dfab40",
             "label": "Section 6 Background Image",
             "name": "section_6_background_image",
@@ -769,6 +788,13 @@
                 "operator": "==",
                 "value": "templates\/template-homepage-2.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-homepage-3.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -792,5 +818,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1523045615
+    "modified": 1523309942
 }

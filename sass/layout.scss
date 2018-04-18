@@ -61,6 +61,9 @@ body {
 .border-white {
 	border: 2px solid $color-white;
 }
+.border-blue {
+	border: 2px solid $color-blue-medium;
+}
 .border-bottom {
 	border-bottom: 2px solid $color-white;
 }
@@ -356,6 +359,7 @@ footer {
 	border-width: 3px;
 	overflow: hidden;
 }
+
 
 /* Section 6
 ----------------------------------------------------------------------------------------------------*/
